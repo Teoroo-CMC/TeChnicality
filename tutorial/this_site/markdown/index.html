@@ -1,0 +1,626 @@
+<!--
+  This Basic theme serves as an example for how to create other
+  themes by demonstrating the features with minimal HTML and CSS.
+  Comments like this will be through the code to explain briefly
+  what each feature is and point you to the MkDocs documentation
+  to find out more.
+-->
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>Markdown - TeChnicality</title>
+
+  <link rel="stylesheet" href="../../../css/theme.css">
+  <link rel="stylesheet" href="../../../css/pygments.css">
+  <link rel="icon" href="data:,">
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script src="../../../js/theme.js"></script>
+
+  <script>
+    $(document).ready(function(){
+          $('table').wrap('<div class="table-wrapper"></div>');
+    });
+  </script>
+
+  
+    <script src="../../../js/mathjax.js"></script>
+  
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+    <script src="../../../search/main.js"></script>
+  
+
+</head>
+
+<body>
+  <header class="header">
+    <ul>
+      <li id="logo">
+        <a href="../../.."><span>TeC</span>hnicality</a>
+      </li>
+      
+      
+  <li  class="tab" >
+    <a href="../../.." class="">
+      Home
+    </a>
+  </li>
+
+      
+      
+  
+  <li class="active tab" >
+    <a href="../../overview/">
+      Tutorial
+    </a>
+  </li>
+
+      
+      
+  
+  <li  class="tab" >
+    <a href="../../../simulate/overview/">
+      Simulate
+    </a>
+  </li>
+
+      
+      
+  
+  <li  class="tab" >
+    <a href="../../../develop/overview/">
+      Develop
+    </a>
+  </li>
+
+      
+      <li class="tools">
+        
+          <a id="nav-toggle" class="tool" onclick="nav_toggle()">
+        
+          <svg><use xlink:href="../../../svg/sprite.svg#menu-2"></use></svg>
+        </a>
+        <script>
+           function nav_toggle() {
+               var bar = document.getElementById("tab-bar");
+               if (bar.style.display === "none") {
+                   bar.style.display = "block";
+               } else {
+                   bar.style.display = "none";
+               }
+           }
+          function nav_reset() {
+              var bar = document.getElementById("tab-bar");
+              if (window.innerWidth>950){
+                  bar.style.display = "block";
+              } else {
+                  bar.style.display = "none";
+              }
+          }
+          window.onresize = nav_reset;
+        </script>
+        
+        <a class="tool" href="https://github.com/teoroo-cmc/technicality-private/">
+          <svg><use xlink:href="../../../svg/sprite.svg#brand-github"></use></svg>
+          <span>teoroo-cmc/technicality-private</span>
+        </a>
+        
+      </li>
+    </ul>
+  </header>
+
+
+  <div id="main">
+    <div id="tab-bar">
+      <ul>
+      
+       
+  <li  class="tab" >
+    <a href="../../.." class="">
+      Home
+    </a>
+  </li>
+
+         
+           <div class="nav-bar">
+             <ul>
+               
+             </ul>
+           </div>
+         
+      
+       
+  
+  <li class="active tab" >
+    <a href="../../overview/">
+      Tutorial
+    </a>
+  </li>
+
+         
+           <div class="nav-bar">
+             <ul>
+               
+                 
+                   
+    <li >
+      <a href="../../overview/" class="">
+        Overview
+      </a>
+    </li>
+
+                 
+                   
+  <a class="nav-title" > Edit this site </a>
+  
+    
+    <li >
+      <a href="../overview/" class="">
+        Overview
+      </a>
+    </li>
+
+  
+    
+    <li >
+      <a href="../test_tutorial.md" class="">
+        test tutorial
+      </a>
+    </li>
+
+  
+    
+    <li >
+      <a href="../vscode/" class="">
+        VS Code
+      </a>
+    </li>
+
+  
+    
+    <li class="active">
+      <a href="./" class="">
+        Markdown
+      </a>
+    </li>
+
+  
+    
+    <li >
+      <a href="../git/" class="">
+        Git & GitHub
+      </a>
+    </li>
+
+  
+
+                 
+               
+             </ul>
+           </div>
+         
+      
+       
+  
+  <li  class="tab" >
+    <a href="../../../simulate/overview/">
+      Simulate
+    </a>
+  </li>
+
+         
+           <div class="nav-bar">
+             <ul>
+               
+             </ul>
+           </div>
+         
+      
+       
+  
+  <li  class="tab" >
+    <a href="../../../develop/overview/">
+      Develop
+    </a>
+  </li>
+
+         
+           <div class="nav-bar">
+             <ul>
+               
+             </ul>
+           </div>
+         
+      
+      </ul>
+    </div>
+
+    <div id="content">
+      <h1 id="writing-with-the-markdown-syntax">Writing with the Markdown syntax</h1>
+<p>This page contains examples of formatting ext with Markdown, click on the
+Markdown and Result tab to see how the source code corresponding outcome.</p>
+<details class="warning">
+<summary>Markdown renders can look different in different places</summary>
+<p>The rendering of the same Markdown text can depend on the theme by the
+rendering engine, the syntax supported by it, and the theme specified by it.
+You can see how this is the case on the rendered documentaion site, the 
+GitHub page for this document, and Markdown preview tools (try
+<code>Ctrl+Shift+V</code> if you use VS Code).</p>
+</details>
+<h2 id="basic-syntax">Basic Syntax</h2>
+<p>The idea of Markdown is to mark text with symbols for them to be rendered, while
+keeping the readability of the plain text. In the following, you find standard
+syntaxes to Markdown, click on the result tab to see how they are rendered on a
+web page. A more comprehensive list of syntax can be found in this
+<a href="https://www.markdownguide.org/basic-syntax/">link</a>.</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Markdown</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="gh"># Headings start with # (hash) sign</span>
+
+<span class="gu">## Add more hash to get levels of heading</span>
+
+Text can be formatted inline using <span class="ge">*starts*</span>, <span class="gs">**double stars**</span>; paragraphs are
+separated with empty lines, single space at the end of lines should will be ignored
+(and should be avoided),  
+New lines within a paragraph can be enforced with two spaces.
+
+Separating lines can be manually inserted with three <span class="sb">`-`</span> (minus) symbols.
+
+--- 
+
+&lt;https://url.links&gt; and &lt;mail.address@TeC&gt; should be wrappend in <span class="sb">`&lt;&gt;`</span> 
+(pointy brackets) to be recognized.  
+And text with hyperlinks can be inserted  with <span class="sb">`[]`</span> (square brackets),
+in one of the three ways:
+
+<span class="k">-</span><span class="w"> </span>[<span class="nt">link with url in bracket</span>](<span class="na">https://goes.to.nowhere</span>); 
+<span class="k">-</span><span class="w"> </span>[link with url in a separated line];
+<span class="k">-</span><span class="w"> </span>[<span class="nt">link with an id</span>][<span class="nl">id_of_link</span>].
+
+[<span class="nl">link with url in a separated line</span>]: <span class="na">https://goes.to.nowhere</span>
+[<span class="nl">id_of_link</span>]: <span class="na">https://goes.to.nowhere</span>
+
+![](https://avatars.githubusercontent.com/u/45621575?s=400&amp;u=e274624771d1656a84a223633c0397469e3a3330&amp;v=4){width=100px}
+Links can also be used to include images to the document:
+
+<span class="gu">## Lists</span>
+
+Unordered list with can be denoted with the symbols <span class="sb">`-`</span>, <span class="sb">`+`</span> or <span class="sb">`*`</span>: 
+
+<span class="k">-</span><span class="w"> </span>Apple;
+<span class="k">-</span><span class="w"> </span>Orange;
+<span class="k">-</span><span class="w"> </span>Banana.
+
+Ordered list with can be denoted with numbers folowed by a <span class="sb">`.`</span> (dot), numbers will be
+assigned automatically during the rendering: 
+
+<span class="k">1.</span> Apple;
+<span class="k">2.</span> Orange;
+<span class="k">3.</span> Banana.
+
+<span class="gu">## Blocks</span>
+
+<span class="k">&gt; </span><span class="ge">Block quotes can be included with  `&gt;` (greater) symbols.</span>
+
+Code blocks can be included with the three `` <span class="sb">` `</span>` (backtick or backquote)
+symbols:
+
+<span class="sb">```bash</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span><span class="w"> </span>
+<span class="sb">```</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Result</label><div class="tabbed-content">
+<h1 id="headings-start-with-hash-sign">Headings start with # (hash) sign</h1>
+<h2 id="add-more-hash-to-get-levels-of-heading">Add more hash to get levels of heading</h2>
+<p>Text can be formatted inline using <em>starts</em>, <strong>double stars</strong>; paragraphs are
+separated with empty lines, single space at the end of lines should will be ignored
+(and should be avoided),<br />
+New lines within a paragraph can be enforced with two spaces.</p>
+<p>Separating lines can be manually inserted with three <code>-</code> (minus) symbols.</p>
+<hr />
+<p><a href="https://url.links">https://url.links</a> and <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#105;&#108;&#46;&#97;&#100;&#100;&#114;&#101;&#115;&#115;&#64;&#84;&#101;&#67;">&#109;&#97;&#105;&#108;&#46;&#97;&#100;&#100;&#114;&#101;&#115;&#115;&#64;&#84;&#101;&#67;</a> should be wrappend in <code>&lt;&gt;</code> 
+(pointy brackets) to be recognized.<br />
+And text with hyperlinks can be inserted  with <code>[]</code> (square brackets),
+in one of the three ways:</p>
+<ul>
+<li><a href="https://goes.to.nowhere">link with url in bracket</a>; </li>
+<li><a href="https://goes.to.nowhere">link with url in a separated line</a>;</li>
+<li><a href="https://goes.to.nowhere">link with an id</a>.</li>
+</ul>
+<p><img alt="" src="https://avatars.githubusercontent.com/u/45621575?s=400&amp;u=e274624771d1656a84a223633c0397469e3a3330&amp;v=4" width="100px" />
+Links can also be used to include images to the document:</p>
+<h2 id="lists">Lists</h2>
+<p>Unordered list with can be denoted with the symbols <code>-</code>, <code>+</code> or <code>*</code>: </p>
+<ul>
+<li>Apple;</li>
+<li>Orange;</li>
+<li>Banana.</li>
+</ul>
+<p>Ordered list with can be denoted with numbers folowed by a <code>.</code> (dot), numbers will be
+assigned automatically during the rendering: </p>
+<ol>
+<li>Apple;</li>
+<li>Orange;</li>
+<li>Banana.</li>
+</ol>
+<h2 id="blocks">Blocks</h2>
+<blockquote>
+<p>Block quotes can be included with  <code>&gt;</code> (greater) symbols.</p>
+</blockquote>
+<p>Code blocks can be included with the three <code>`</code> (backtick or backquote)
+symbols:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span><span class="w"> </span>
+</code></pre></div>
+</div>
+</div>
+<h2 id="github-flavored-markdown">GitHub Flavored Markdown</h2>
+<p>The above syntax gives some essential elements for technological documentations,
+but some extra elements might come handy, such as tables, task lists, etc. The
+most widely accepted set of the extensions is the ones used in GitHub. The
+extended syntax is called <a href="https://github.github.com/gfm/">GitHub flavored markdown</a> (GFM), and showcased
+below:</p>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Markdown</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="gd">~~Strikeout~~</span> text with tildes.
+
+Task lists with <span class="sb">`[ ]`</span> (square bracket with space or x) after a bullet:
+
+<span class="k">- [ ]</span> Task to be done
+<span class="k">- [x]</span> Finished task
+
+Tables:
+
+| Item    | Price | Unit     | Description                                                              |
+|---------|-------|----------|--------------------------------------------------------------------------|
+| Apple   | 20    | SEK/kg   | An apple is an edible fruit produced by an apple tree (Malus domestica). |
+| Spinach | 30    | SEK/pack | Spinach (Spinacia oleracea) is a leafy green flowering plant.            |
+</code></pre></div>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Result</label><div class="tabbed-content">
+<p><del>Strikeout</del> text with tildes.</p>
+<p>Task lists with <code>[ ]</code> (square bracket with space or x) after a bullet:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Task to be done</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" checked/><span class="task-list-indicator"></span></label> Finished task</li>
+</ul>
+<p>Tables:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Price</th>
+<th>Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apple</td>
+<td>20</td>
+<td>SEK/kg</td>
+<td>An apple is an edible fruit produced by an apple tree (Malus domestica).</td>
+</tr>
+<tr>
+<td>Spinach</td>
+<td>30</td>
+<td>SEK/pack</td>
+<td>Spinach (Spinacia oleracea) is a leafy green flowering plant.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h2 id="extended-syntax">Extended Syntax</h2>
+<p>Some extra flexibility are given through extensions to Markdown syntax, most of
+them (including the tabbed contents above) in this website are supported by the
+<a href="https://facelessuser.github.io/pymdown-extensions/#extensions">PyMdownX</a> package. Be aware that the following might not work as expected as a
+<code>README.md</code> file on GitHub.</p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Markdown</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>Footnote are links labbeled with the <span class="sb">`^`</span> (caret) sign, they will be put into
+the bottom of pages.[^1] Reference to bibtex files can be inserted with 
+<span class="sb">`[@bib_key]`</span>,[^bibtex] they will be also appear as footnotes.[^2]
+
+[<span class="nl">^1</span>]: <span class="na">The footnote text itself can be put wherever proper in the same </span>
+document, e.g. following the paragraph.
+
+[<span class="nl">^bibtex</span>]: <span class="na">This is supported by the [mkdocs-bibtex] package, see their </span>
+documentation for details. For this document, the bibtex file is stored
+at <span class="sb">`docs/ref.bib`</span>, and the style is at <span class="sb">`docs/jcp.csl`</span>.
+
+[<span class="nl">mkdocs-bibtex</span>]: <span class="na">https://github.com/shyamd/mkdocs-bibtex/</span>
+
+Math equations inline with <span class="sb">`$...$`</span> or in blocks with <span class="sb">`$$ ... $$`</span> 
+
+$$
+u<span class="ge">_{\alpha} = \frac{D^{\mathrm{s}}_</span>{\alpha}}{RT} 
+           = \lim_{t\to\infty} \frac{1}{6RTt}
+             \left\langle
+               \frac{1}{N_{\alpha}} \sum_{i\in\alpha}
+               \|\Delta \mathbf{r}_{i}(t)\|^{2}
+             \right\rangle
+$$
+
+Tabbed contents can be inserted with blocks indicated by three <span class="sb">`=`</span> (equal) 
+marks, followed by the title and indented text:
+
+=== &quot;The quick brown fox&quot;
+
+    jumps over the lazy dog
+
+=== &quot;Lorem ipsum&quot;
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+    occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+    mollit anim id est laborum.
+
+Note, warning, and error blocks may be inserted with three <span class="sb">`!`</span> (exclamation) 
+marks:
+
+=== &quot;Note&quot;
+
+    !!! Note
+
+        Notes are blue.
+
+=== &quot;Warning&quot;
+
+    !!! Warning &quot;Title of the blocks can be changed&quot;
+
+        Warnings are yellow
+
+=== &quot;Dangers&quot;
+
+    !!! Danger &quot;&quot;
+
+        Dangers are red, and titles can be blank.
+
+Similar syntax for collapsible blocks with three <span class="sb">`?`</span> (question) marks:
+
+=== &quot;Note&quot;
+
+    ??? Note
+
+        Notes are still blue.
+
+=== &quot;Warning&quot;
+
+    ??? Warning &quot;Title of collapsible blocks can also be changed&quot;
+
+        Warnings are still yellow.
+
+=== &quot;Dangers&quot;
+
+    ???+ Danger &quot;Add a + sign to expand the block by default&quot;
+
+        Don&#39;t set empty titles for collapsibles, though.
+</code></pre></div>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Result</label><div class="tabbed-content">
+<p>Footnote are links labbeled with the <code>^</code> (caret) sign, they will be put into
+the bottom of pages.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> Reference to bibtex files can be inserted with 
+<code>[@bib_key]</code>,<sup id="fnref:bibtex"><a class="footnote-ref" href="#fn:bibtex">2</a></sup> they will be also appear as footnotes.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">3</a></sup></p>
+<p>Math equations inline with <code>$...$</code> or in blocks with <code>$$ ... $$</code> </p>
+<div class="arithmatex">\[
+u_{\alpha} = \frac{D^{\mathrm{s}}_{\alpha}}{RT} 
+           = \lim_{t\to\infty} \frac{1}{6RTt}
+             \left\langle
+               \frac{1}{N_{\alpha}} \sum_{i\in\alpha}
+               \|\Delta \mathbf{r}_{i}(t)\|^{2}
+             \right\rangle
+\]</div>
+<p>Tabbed contents can be inserted with blocks indicated by three <code>=</code> (equal) 
+marks, followed by the title and indented text:</p>
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">The quick brown fox</label><div class="tabbed-content">
+<p>jumps over the lazy dog</p>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Lorem ipsum</label><div class="tabbed-content">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+mollit anim id est laborum.</p>
+</div>
+</div>
+<p>Note, warning, and error blocks may be inserted with three <code>!</code> (exclamation) 
+marks:</p>
+<div class="tabbed-set" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Note</label><div class="tabbed-content">
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notes are blue.</p>
+</div>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Warning</label><div class="tabbed-content">
+<div class="admonition warning">
+<p class="admonition-title">Title of the blocks can be changed</p>
+<p>Warnings are yellow</p>
+</div>
+</div>
+<input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><label for="__tabbed_5_3">Dangers</label><div class="tabbed-content">
+<div class="admonition danger">
+<p>Dangers are red, and titles can be blank.</p>
+</div>
+</div>
+</div>
+<p>Similar syntax for collapsible blocks with three <code>?</code> (question) marks:</p>
+<div class="tabbed-set" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">Note</label><div class="tabbed-content">
+<details class="note">
+<summary>Note</summary>
+<p>Notes are still blue.</p>
+</details>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">Warning</label><div class="tabbed-content">
+<details class="warning">
+<summary>Title of collapsible blocks can also be changed</summary>
+<p>Warnings are still yellow.</p>
+</details>
+</div>
+<input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><label for="__tabbed_6_3">Dangers</label><div class="tabbed-content">
+<details class="danger" open="open">
+<summary>Add a + sign to expand the block by default</summary>
+<p>Don't set empty titles for collapsibles, though.</p>
+</details>
+</div>
+</div>
+</div>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The footnote text itself can be put wherever proper in the same 
+document, e.g. following the paragraph.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:bibtex">
+<p>This is supported by the <a href="https://github.com/shyamd/mkdocs-bibtex/">mkdocs-bibtex</a> package, see their 
+documentation for details. For this document, the bibtex file is stored
+at <code>docs/ref.bib</code>, and the style is at <code>docs/jcp.csl</code>.&#160;<a class="footnote-backref" href="#fnref:bibtex" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><sup>1</sup> A. Einstein, “<a href="https://doi.org/10.1002/andp.19053220806">Über die von der molekularkinetischen theorie der wärme geforderte bewegung von in ruhenden flüssigkeiten suspendierten teilchen</a>,” Ann. Phys. <strong>322</strong>(8), 549–560 (1905).&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+
+  </div>
+
+  <div class="page">
+    <div class="page-prev">
+      
+      <a href="../vscode/" title="VS Code"><span>«</span> Previous</a>
+      
+    </div>
+    <div class="page-next">
+      
+      <a href="../git/" title="Git & GitHub" />Next <span>»</span></a>
+      
+    </div>
+  </div>
+
+  <div class="footer">
+    Built with <a href="https://www.mkdocs.org">mkdocs</a> and the <a href="https://github.com/yqshao/mkdocs-flux-theme">flux</a> theme.
+  </div>
+</body>
+</html>

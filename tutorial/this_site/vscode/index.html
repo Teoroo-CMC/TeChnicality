@@ -1,0 +1,348 @@
+<!--
+  This Basic theme serves as an example for how to create other
+  themes by demonstrating the features with minimal HTML and CSS.
+  Comments like this will be through the code to explain briefly
+  what each feature is and point you to the MkDocs documentation
+  to find out more.
+-->
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>VS Code - TeChnicality</title>
+
+  <link rel="stylesheet" href="../../../css/theme.css">
+  <link rel="stylesheet" href="../../../css/pygments.css">
+  <link rel="icon" href="data:,">
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script src="../../../js/theme.js"></script>
+
+  <script>
+    $(document).ready(function(){
+          $('table').wrap('<div class="table-wrapper"></div>');
+    });
+  </script>
+
+  
+    <script src="../../../js/mathjax.js"></script>
+  
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+    <script src="../../../search/main.js"></script>
+  
+
+</head>
+
+<body>
+  <header class="header">
+    <ul>
+      <li id="logo">
+        <a href="../../.."><span>TeC</span>hnicality</a>
+      </li>
+      
+      
+  <li  class="tab" >
+    <a href="../../.." class="">
+      Home
+    </a>
+  </li>
+
+      
+      
+  
+  <li class="active tab" >
+    <a href="../../overview/">
+      Tutorial
+    </a>
+  </li>
+
+      
+      
+  
+  <li  class="tab" >
+    <a href="../../../simulate/overview/">
+      Simulate
+    </a>
+  </li>
+
+      
+      
+  
+  <li  class="tab" >
+    <a href="../../../develop/overview/">
+      Develop
+    </a>
+  </li>
+
+      
+      <li class="tools">
+        
+          <a id="nav-toggle" class="tool" onclick="nav_toggle()">
+        
+          <svg><use xlink:href="../../../svg/sprite.svg#menu-2"></use></svg>
+        </a>
+        <script>
+           function nav_toggle() {
+               var bar = document.getElementById("tab-bar");
+               if (bar.style.display === "none") {
+                   bar.style.display = "block";
+               } else {
+                   bar.style.display = "none";
+               }
+           }
+          function nav_reset() {
+              var bar = document.getElementById("tab-bar");
+              if (window.innerWidth>950){
+                  bar.style.display = "block";
+              } else {
+                  bar.style.display = "none";
+              }
+          }
+          window.onresize = nav_reset;
+        </script>
+        
+        <a class="tool" href="https://github.com/teoroo-cmc/technicality-private/">
+          <svg><use xlink:href="../../../svg/sprite.svg#brand-github"></use></svg>
+          <span>teoroo-cmc/technicality-private</span>
+        </a>
+        
+      </li>
+    </ul>
+  </header>
+
+
+  <div id="main">
+    <div id="tab-bar">
+      <ul>
+      
+       
+  <li  class="tab" >
+    <a href="../../.." class="">
+      Home
+    </a>
+  </li>
+
+         
+           <div class="nav-bar">
+             <ul>
+               
+             </ul>
+           </div>
+         
+      
+       
+  
+  <li class="active tab" >
+    <a href="../../overview/">
+      Tutorial
+    </a>
+  </li>
+
+         
+           <div class="nav-bar">
+             <ul>
+               
+                 
+                   
+    <li >
+      <a href="../../overview/" class="">
+        Overview
+      </a>
+    </li>
+
+                 
+                   
+  <a class="nav-title" > Edit this site </a>
+  
+    
+    <li >
+      <a href="../overview/" class="">
+        Overview
+      </a>
+    </li>
+
+  
+    
+    <li >
+      <a href="../test_tutorial.md" class="">
+        test tutorial
+      </a>
+    </li>
+
+  
+    
+    <li class="active">
+      <a href="./" class="">
+        VS Code
+      </a>
+    </li>
+
+  
+    
+    <li >
+      <a href="../markdown/" class="">
+        Markdown
+      </a>
+    </li>
+
+  
+    
+    <li >
+      <a href="../git/" class="">
+        Git & GitHub
+      </a>
+    </li>
+
+  
+
+                 
+               
+             </ul>
+           </div>
+         
+      
+       
+  
+  <li  class="tab" >
+    <a href="../../../simulate/overview/">
+      Simulate
+    </a>
+  </li>
+
+         
+           <div class="nav-bar">
+             <ul>
+               
+             </ul>
+           </div>
+         
+      
+       
+  
+  <li  class="tab" >
+    <a href="../../../develop/overview/">
+      Develop
+    </a>
+  </li>
+
+         
+           <div class="nav-bar">
+             <ul>
+               
+             </ul>
+           </div>
+         
+      
+      </ul>
+    </div>
+
+    <div id="content">
+      <h1 id="vs-code">VS Code</h1>
+<p>This page walks you through basic operations in the VS Code editor.</p>
+<details class="warning">
+<summary>VS Code is not a hard requirement</summary>
+<p>The other instructions in this documentation does not strictly require VS 
+Code to run. If you wish, you can follow everything in any editor or 
+develop environment you prefer. Nevertheless, VS Code provides the most
+convinient option that with decent usability and uniform environments
+for collaborators. </p>
+</details>
+<h2 id="navigating-in-vs-code">Navigating in VS Code</h2>
+<p>Most of the operations in VS Code are accessible through the "Command Palette",
+which you can access by pressing <code>F1</code> or <code>Ctrl+Shift+P</code>. You can search through
+the available commands, and alongside the commands you see shortcuts to them. A
+similar command is <code>Ctrl+P</code> (search files), that gives quick access to files
+(instead of finding them in the explorer to the left).</p>
+<div class="admonition note">
+<p class="admonition-title">Practice</p>
+<p>Open a Command Palette and type color theme (this should bring you to 
+Preferences: Color Theme), chose  a color theme that fits your taste.</p>
+<p>Find the "Tasks: Run Task" command, and run the <code>mkdocs serve</code> task. 
+It should start a process the builds the documentation on-the-fly. 
+You can also open the source file of this page named as <code>vscode.md</code> 
+and see how your changes are reflected in the built site.</p>
+</div>
+<h2 id="accessing-the-terminal">Accessing the terminal</h2>
+<p>To access the terminal, you can use the shortcut <code>Ctrl+`</code>. What you bring up
+is the so-called "Panel" in VS Code. There contains information about running
+processes, debug and build information, press the shortcut again to hide the Panel.</p>
+<div class="admonition note">
+<p class="admonition-title">Practice</p>
+<p>Open and hide the panel several times. Also try creating new 
+terminals by <code>Ctrl+Shift+`</code>. </p>
+<p>Find the <strong>PORTS</strong> tab in the panel. You should recognize the port openned 
+by <code>mkdocs</code>, hovering on the local address to 
+chose how the live documentation page is displayed.</p>
+</div>
+<h2 id="extensions">Extensions</h2>
+<p>In the (left) sidebar, you find the list of extensions installed in VS Code. In
+this repo, a few extensions are recommended (and should be installed by
+default), including checkers for typos and Markdown syntax. And a shortcut to
+wrap long lines with <code>Ctrl+q</code>. A variety of extensions are available to VS Code,
+some of which will be automatically recommended.</p>
+<div class="admonition note">
+<p class="admonition-title">Practice</p>
+<p>Search for the extension "GitLens" and install it to your VS Code. The 
+extension provides a few useful interfaces to work with git, which will be 
+demonstrated in the other instructions. </p>
+</div>
+<h2 id="settings">Settings</h2>
+<p>For more settings of VS Code, you can open the Settings (use the command
+palette). Since the VS Code is supposed to work different projects and different
+environments, the same setting can be set as a user (anything you open with VS
+Code), machine-wise or project-wise. This will come handy if you decide to use
+VS Code for different projects.</p>
+<div class="admonition note">
+<p class="admonition-title">Think</p>
+<ol>
+<li>We have set up markdownlint to ignore certain rules; can you find what is
+   set (hint: search for "markdownlint.config")?</li>
+<li>What would you do if you want to change this setting for some other project?</li>
+<li>What if you want to change some config for only yourself (not your collaborators)?</li>
+</ol>
+</div>
+<h2 id="arranging-the-layout">Arranging the layout</h2>
+<p>The window layout within VS Code can be easily adjusted to your need, the file
+views split by dragging file tabs, and the same applies to panel tabs and
+extensions. Before proceeding, adjust the windows to a comfortable layout.</p>
+<p>Now, you are well-prepared to edit this document in VS Code. Move on to the next
+page and see how you can format the documentation using a simple language based
+on plain text (Markdown).</p>
+    </div>
+
+  </div>
+
+  <div class="page">
+    <div class="page-prev">
+      
+      <a href="../overview/" title="Overview"><span>«</span> Previous</a>
+      
+    </div>
+    <div class="page-next">
+      
+      <a href="../markdown/" title="Markdown" />Next <span>»</span></a>
+      
+    </div>
+  </div>
+
+  <div class="footer">
+    Built with <a href="https://www.mkdocs.org">mkdocs</a> and the <a href="https://github.com/yqshao/mkdocs-flux-theme">flux</a> theme.
+  </div>
+</body>
+</html>

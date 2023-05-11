@@ -1,0 +1,459 @@
+<!--
+  This Basic theme serves as an example for how to create other
+  themes by demonstrating the features with minimal HTML and CSS.
+  Comments like this will be through the code to explain briefly
+  what each feature is and point you to the MkDocs documentation
+  to find out more.
+-->
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>Git & GitHub - TeChnicality</title>
+
+  <link rel="stylesheet" href="../../../css/theme.css">
+  <link rel="stylesheet" href="../../../css/pygments.css">
+  <link rel="icon" href="data:,">
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script src="../../../js/theme.js"></script>
+
+  <script>
+    $(document).ready(function(){
+          $('table').wrap('<div class="table-wrapper"></div>');
+    });
+  </script>
+
+  
+    <script src="../../../js/mathjax.js"></script>
+  
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+    <script src="../../../search/main.js"></script>
+  
+
+</head>
+
+<body>
+  <header class="header">
+    <ul>
+      <li id="logo">
+        <a href="../../.."><span>TeC</span>hnicality</a>
+      </li>
+      
+      
+  <li  class="tab" >
+    <a href="../../.." class="">
+      Home
+    </a>
+  </li>
+
+      
+      
+  
+  <li class="active tab" >
+    <a href="../../overview/">
+      Tutorial
+    </a>
+  </li>
+
+      
+      
+  
+  <li  class="tab" >
+    <a href="../../../simulate/overview/">
+      Simulate
+    </a>
+  </li>
+
+      
+      
+  
+  <li  class="tab" >
+    <a href="../../../develop/overview/">
+      Develop
+    </a>
+  </li>
+
+      
+      <li class="tools">
+        
+          <a id="nav-toggle" class="tool" onclick="nav_toggle()">
+        
+          <svg><use xlink:href="../../../svg/sprite.svg#menu-2"></use></svg>
+        </a>
+        <script>
+           function nav_toggle() {
+               var bar = document.getElementById("tab-bar");
+               if (bar.style.display === "none") {
+                   bar.style.display = "block";
+               } else {
+                   bar.style.display = "none";
+               }
+           }
+          function nav_reset() {
+              var bar = document.getElementById("tab-bar");
+              if (window.innerWidth>950){
+                  bar.style.display = "block";
+              } else {
+                  bar.style.display = "none";
+              }
+          }
+          window.onresize = nav_reset;
+        </script>
+        
+        <a class="tool" href="https://github.com/teoroo-cmc/technicality-private/">
+          <svg><use xlink:href="../../../svg/sprite.svg#brand-github"></use></svg>
+          <span>teoroo-cmc/technicality-private</span>
+        </a>
+        
+      </li>
+    </ul>
+  </header>
+
+
+  <div id="main">
+    <div id="tab-bar">
+      <ul>
+      
+       
+  <li  class="tab" >
+    <a href="../../.." class="">
+      Home
+    </a>
+  </li>
+
+         
+           <div class="nav-bar">
+             <ul>
+               
+             </ul>
+           </div>
+         
+      
+       
+  
+  <li class="active tab" >
+    <a href="../../overview/">
+      Tutorial
+    </a>
+  </li>
+
+         
+           <div class="nav-bar">
+             <ul>
+               
+                 
+                   
+    <li >
+      <a href="../../overview/" class="">
+        Overview
+      </a>
+    </li>
+
+                 
+                   
+  <a class="nav-title" > Edit this site </a>
+  
+    
+    <li >
+      <a href="../overview/" class="">
+        Overview
+      </a>
+    </li>
+
+  
+    
+    <li >
+      <a href="../test_tutorial.md" class="">
+        test tutorial
+      </a>
+    </li>
+
+  
+    
+    <li >
+      <a href="../vscode/" class="">
+        VS Code
+      </a>
+    </li>
+
+  
+    
+    <li >
+      <a href="../markdown/" class="">
+        Markdown
+      </a>
+    </li>
+
+  
+    
+    <li class="active">
+      <a href="./" class="">
+        Git & GitHub
+      </a>
+    </li>
+
+  
+
+                 
+               
+             </ul>
+           </div>
+         
+      
+       
+  
+  <li  class="tab" >
+    <a href="../../../simulate/overview/">
+      Simulate
+    </a>
+  </li>
+
+         
+           <div class="nav-bar">
+             <ul>
+               
+             </ul>
+           </div>
+         
+      
+       
+  
+  <li  class="tab" >
+    <a href="../../../develop/overview/">
+      Develop
+    </a>
+  </li>
+
+         
+           <div class="nav-bar">
+             <ul>
+               
+             </ul>
+           </div>
+         
+      
+      </ul>
+    </div>
+
+    <div id="content">
+      <h1 id="git-and-github-workflow">Git and GitHub workflow</h1>
+<p>This instruction skim through of using Git in a collaborative project. The
+workflow is based on typical open-source projects on GitHub, though a similar
+experience can be expected regardless of where the project is hosted.</p>
+<details class="warning">
+<summary>GitLens vs. git command</summary>
+<p>Instructions in this document have two versions, one with VS Code + 
+<a href="../vscode#extensions">GitLens</a>
+and one with the <code>git</code> command. The former is provided because
+the graphic UI is easier to work with, and covers most of the
+daily usage. However, note that the command provides more functionalities, 
+and you might need it for edge cases (e.g., to find a lost commit, or to 
+rewrite history).</p>
+</details>
+<h2 id="git-repository">Git repository</h2>
+<p>A git repository (repo) is a folder managed by git. That means git keeps track
+of the files in it, you can switch, compare, and combine different versions
+with git.</p>
+<p>You can use git repo for local folders only, but it is common to synchronize
+your local repo to a remote server (e.g. on GitHub). While working with a git
+repo, it's a good idea to synchronize often the local and remote changes.</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">GitLens</label><div class="tabbed-content">
+<p>Getting familiar with the local and remote repos:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Run "Git: Fetch From All Remotes" command;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Search the "Commit Graph" command and show the commit graph.</li>
+</ul>
+<p>You should see two remotes, one for your own private fork (origin), and one 
+for the shared main repo (upstream). This is a common setup where you own
+whole controll over the "origin", while the "upstream" is administrated 
+by the core developer or a team.</p>
+<p>When you proceed with this tutotiral, see how the changes are reflected in 
+the graph.</p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">CLI</label><div class="tabbed-content">
+<p>Inspecting a repo from CLI:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Run <code>git remote -v</code> in a git repository, how many remotes you have;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <code>git fetch</code> to update the remotes;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <code>git status</code> to compare your local copy to the remote;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <code>git pull</code> to apply remote changes to your local repo (you might have to 
+  setup the default remotes).</li>
+</ul>
+</div>
+</div>
+<h2 id="commits">Commits</h2>
+<p>Commit are the basic element of "changes" in git, whenever you make a change, it
+will be identified as a hex code (called SHA) like <code>3c03f5</code>. The code itself is
+very long, but it is usually OK to refer to it with the first 6 digits.</p>
+<p>To make a commit, you have to <strong>"stage"</strong> your changes. Staging prepares your
+change to be <strong>"committed"</strong>, which means making a snapshot of you project.</p>
+<div class="admonition note">
+<p class="admonition-title">Practice</p>
+<p>Create a new file in the documentation, commit it following the instruction 
+below.</p>
+</div>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">GitLens</label><div class="tabbed-content">
+<p>Make a commit with GitLens:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Changes in VS Code can be found in the source control side panel;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> You can click on a file to see what changes are made;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Clicking the <code>+</code> (plus) sign to stages your change;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Write a short message and click commit to make a commit;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Check the history in Commit Graph.</li>
+</ul>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">CLI</label><div class="tabbed-content">
+<p>Make a commit from CLI</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <code>git add filename.suffix</code> to stage the change;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <code>git commit</code> to start a commit, an editor of your choice should pop up<br />
+  a commit will be made after you save and exit;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> If you are in a hurry, you can just attach the message with <code>git commit -c "commit message"</code>;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Use <code>git log</code> to inspect the history.</li>
+</ul>
+</div>
+</div>
+<p>You see that you don't have to commit all your changes at once, and a good
+practice is to arrange your commits in some logical order and write concise
+commit messages. But for now, don't worry too much and just keep in mind that:</p>
+<ol>
+<li>Frequent commits are better than big mixed commits;</li>
+<li>Commit messages should be informative.</li>
+</ol>
+<p>I.e., write "work in progress for XXX task", rather than "combined progress in
+May". Later in this tutorial you will see how to re-arrange your commits, and it
+is easier if you have small commits than big ones.</p>
+<p>You should now see your commit and its SHA code. The code allows you to switch
+between different versions of your repo, when you do so, you <strong>"check out"</strong> a
+commit (e.g. <code>git checkout 3c03f5d</code>). You will not often check out commits
+directly, instead, you will usually use <strong>"branches"</strong> instead. We do not need
+new branches in this tutorial, but you can read more <a href="https://www.atlassian.com/git/tutorials/using-branches">here</a>.</p>
+<h2 id="rebase">Rebase</h2>
+<p>Rebasing is commonly used to synchronize your commits remote changes. When you
+rebase your commits, you "transplant" your commit onto some other commits, see
+the illustration below:</p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Before</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>      A---B---C local main
+     /
+D---E---F---G upstream main
+</code></pre></div>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">After</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>              A&#39;--B&#39;--C&#39; local main
+             /
+D---E---F---G upstream main
+</code></pre></div>
+</div>
+</div>
+<p>You see how this turns your progress <code>A, B, C</code> into new commits <code>A', B', C'</code>,
+meaning they will get new SHA codes since each of them is based on a different
+starting point now. The <code>rebase</code> command offers much freedom for rearranging
+your commits. See how you can <strong>"squash"</strong> multiple commits into one to clean up
+a long commit history below:</p>
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">GitLens</label><div class="tabbed-content">
+<p>Make a new commit and combine the two commits you've made with rebase:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Edit <code>mkdocs.yml</code>, add your page into the navigation and commit the change;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> In the Commit Graph, choose the commit before your first change, choose 
+"Rebase current branch onto commit" and select "Interactive Rebase".</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> In the editor, rearrange the order of previous commits, 
+select "squash" for the second commit you made, and click "Start Rebase". 
+You will be able to write a new commit message for the combined commit.</li>
+</ul>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">CLI</label><div class="tabbed-content">
+<p>With the command line interface, you can initiate an interactive rebase 
+with the <code>git rebase --interactive</code> command. You can learn more about
+the rebase command in this <a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase">documentation</a>.</p>
+</div>
+</div>
+<p>After saving and exiting the message editor, you shall see a new combined
+commit, with a new SHA code. The same tool is useful if you want to rewrite one
+commit message, or simply fix some small error in a previous commit.</p>
+<h2 id="push">Push</h2>
+<p>With git, it is easy to synchronize changes of code.</p>
+<div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">GitLens</label><div class="tabbed-content">
+<p>Click on "Sync Changes" in the Source Control Panel to <strong>"push"</strong> your 
+changes to the the "origin" remote, i.e., your fork of this private repo.</p>
+<p>This usually works fine, however, when you have a conflicting history to the
+remote one, you will need to force the update by manually running push.
+Find the command "GitLens: Push". Selecting "Force Push" will force the
+remote branch to synchronize.</p>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">CLI</label><div class="tabbed-content">
+<p>To sync changes in CLI you can use the <code>git push</code> command. Git also allows
+you to set up multiple remotes, and configure default push destinations.
+You can find more detaild explanations about synchronization in this 
+<a href="https://www.atlassian.com/git/tutorials/syncing">documentation</a></p>
+</div>
+</div>
+<p>Check that your changes appears on the GitHub page.</p>
+<h2 id="collaboration-on-github">Collaboration on GitHub</h2>
+<p>In the above sections, you see how you can use Git to track the change of your
+code. In a collaborative setting, the ideas are the same, the difference is that
+one cannot allow everyone to write to a main repo.</p>
+<p>A standard procedure is called "pull request" (PR), as the name suggests, one
+submit one's change to the main repo, but the administrator decides whether the
+changes are accepted (or <strong>"pulled"</strong>).</p>
+<p>You do not need to finish your changes to start a PR, in fact, many repos use PR
+as a way to discuss changes to the code. You can start a PR now and describe the
+changes you will make. After you completed your work, comment in the PR to let
+the administrator review your work.</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Start a PR in the <a href="https://github.com/Teoroo-CMC/TeChnicality-private/pulls">shared repo</a>;</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Chose "compare across forks" and find your private repo as the "head";</li>
+</ul>
+<p>Finish your documentation and notify it in PR when it's done. Someone should
+review your changes, and comment on it. Address the changes if necessary, and
+your PR will be merged in the end.</p>
+<h2 id="rebase-vs-merge">Rebase vs. merge</h2>
+<p>In a shared repo some extra rules might be needed to keep the history trackable,
+there are two general styles of collaboration, namely rebase and merge.</p>
+<p>In the above sections, we have only used one branch and rebase changes if
+necessary. Some projects require this for the entire project, so that history
+will be "linear" in the long run. On the other hand, in some repositories, one
+can work on different branches and keep the history of "merging", and you might
+see parallel developments of the project in the log.</p>
+<p>There are <a href="https://www.atlassian.com/git/articles/git-team-workflows-merge-or-rebase">debates</a> on the preferable styles of git history, for this
+documentation, we keep a linear history with the "rebase" workflow for its
+simplicity. This means, you will only be able to pass a pull-request when your
+commits are put on top the current shared "main" branch.</p>
+    </div>
+
+  </div>
+
+  <div class="page">
+    <div class="page-prev">
+      
+      <a href="../markdown/" title="Markdown"><span>«</span> Previous</a>
+      
+    </div>
+    <div class="page-next">
+      
+      <a href="../../../simulate/overview/" title="Overview" />Next <span>»</span></a>
+      
+    </div>
+  </div>
+
+  <div class="footer">
+    Built with <a href="https://www.mkdocs.org">mkdocs</a> and the <a href="https://github.com/yqshao/mkdocs-flux-theme">flux</a> theme.
+  </div>
+</body>
+</html>
